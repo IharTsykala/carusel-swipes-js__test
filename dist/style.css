@@ -1,2 +1,45 @@
-body {
-  background: blue; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header, .carousel-section, .carousel-container, .carousel-container .carousel-container__main, .footer {
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+
+.footer__author, .footer__author_right, .footer__author_down {
+  display: grid;
+  justify-self: center;
+  align-self: center; }
+
+.main, .carousel-section, .carousel-container .carousel-container__main {
+  height: 100%;
+  width: 100%; }
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr; }
+
+.main {
+  background-color: #f74b4b; }
+
+.carousel-container {
+  height: 60%;
+  width: 40%;
+  background-color: #ffffff;
+  grid-template-rows: 1fr 2fr 1fr; }
+  .carousel-container .carousel-container__main {
+    background-color: #f74b4b;
+    grid-template-columns: 1fr 3fr 1fr; }
+
+.footer {
+  padding: 2%; }
+
+.footer__author_right {
+  justify-self: right; }
+
+.footer__author_down {
+  align-self: end; }
